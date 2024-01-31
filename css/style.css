@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+#anim{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size:101% 100%;
+}
+
+#nube{
+    background: url('/img/nube.png') no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+    position: relative;
+    top: 0;
+    animation-name: nube;
+    animation-duration: 13s;
+    animation-fill-mode: both;
+    animation-delay: 6s; 
+}
+
+@keyframes nube {
+    0% {
+        left: 10%;
+    }
+    20%, 80%{
+        opacity: 1;
+        left: -40%;
+    }
+
+    45%, 65%{
+        opacity: 1;
+        background-image: url('/img/nube.png');
+    }
+    100% {
+        opacity: 1;
+        left: -100%;
+    }
+}
+
+#lluvia{
+    background: url('/img/lluvia.png') no-repeat bottom;
+    width: 300px;
+    height: 0px;
+    position: relative;
+    top: 170px;
+    animation-name: lluvia;
+    animation-duration: 4s;
+    animation-delay: 8s;
+    transition: height 3s ease-in-out;
+}
+@keyframes lluvia {
+    65%  {
+        height: 350px;
+    }
+    100% {
+        height: 400px;
+    }
+
+}
+
+#sol{
+    position: fixed;
+    background-image: url(/img/sol.png);
+    width: 18vw;
+    height: 28vh;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    align-self: flex-start;
+    justify-self: left;
+    margin-right: 20vw;
+    opacity: 100%;
+    animation: sol 13.5s;
+
+}
+#flor{
+    background-image: url(/img/flor.png);
+    background-size: 40%;
+    position: fixed;
+    width: 20vw;
+    height: 30vh;
+    background-repeat: no-repeat;
+    align-self: flex-end;
+    left:27%;
+    top:80%;
+    animation: flor 15s 1;
+}
+
+
+@keyframes sol{
+    0%,10%,20%,30%,40%,50%,60%,70%,80%,90%{
+       opacity: 50%;
+    }
+    100%{
+        transition: opacity 2s;
+        opacity: 100%;
+    }
+}
+
+@keyframes flor{
+   0%,10%,20%,30%,40%,50%,60%,70%,80%,90%{
+    top: 100%;        
+   }
+}
+
+#mensaje {
+    background: no-repeat url("../img/mensage.png");
+    width: 310px;
+    height: 50px;
+    position: fixed;
+    top: 400px;
+    left: 800px;
+
+    opacity: 0%;
+    animation-name: mensaje;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+@keyframes mensaje {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 100%;
+        opacity: 0%;
+    }
+}
+
+#mensaje1 {
+    background: no-repeat url("../img/mensage1.png");
+    width: 310px;
+    height: 100px;
+    position: fixed;
+    top: 400px;
+    left: 800px;
+
+    opacity: 0%;
+    animation-name: mensaje1;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+@keyframes mensaje1 {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 100%;
+        opacity: 0%;
+    }
+}
+
+#mensaje2 {
+    background: no-repeat url("../img/mensage2.png");
+    width: 310px;
+    height: 100px;
+    position: fixed;
+    top: 400px;
+    left: 800px;
+
+    opacity: 0%;
+    animation-name: mensaje;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+@keyframes mensaje1 {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 100%;
+        opacity: 0%;
+    }
+}
+
+#mensaje3 {
+    background: no-repeat url("../img/mensage3.png");
+    width: 310px;
+    height: 100px;
+    position: fixed;
+    top: 400px;
+    left: 800px;
+
+    opacity: 0%;
+    animation-name: mensaje;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+@keyframes mensaje3 {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 100%;
+        opacity: 0%;
+    }
+}
